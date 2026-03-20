@@ -116,7 +116,7 @@ git clone <your-repo-link>
 2. Navigate to project:
 
 ```bash
-cd flutter_watchlist
+cd stock
 ```
 
 3. Install dependencies:
@@ -128,7 +128,7 @@ flutter pub get
 4. Run the app:
 
 ```bash
-flutter run
+flutter run(on directly on chrome also)
 ```
 
 ---
@@ -141,6 +141,19 @@ flutter run
 *(Add screenshots here if needed)*
 
 ---
+## 📸 Screenshots
+
+### 🏠 Home Screen
+![stock Screen](assets/images/stock.png)
+
+### ✏️ Before Edit Watchlist
+![Edit Screen](assets/images/beforeeditwatchlist.png)
+
+### ✏️ After Edit Watchlist
+![Edit Screen](assets/images/aftereditwatchlist.png)
+
+### 🏠 After edit Home Screen
+![stock Screen](assets/images/aftereditstock.png)
 
 ## 💡 Key Highlights
 
