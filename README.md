@@ -1,17 +1,173 @@
+# 📈 Flutter Watchlist App (BLoC)
 
+A clean and responsive **Stock Watchlist Application** built using **Flutter** and **BLoC Architecture**.
+This project demonstrates state management, UI/UX design, and list reordering (drag & drop) similar to modern trading apps.
 
-A new Flutter project.
+---
 
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+* 📊 Display list of stocks (Watchlist)
+* 🔄 Drag & drop to reorder stocks
+* 🗑 Delete stocks from watchlist
+* 💾 Save updated watchlist using BLoC
+* 🔍 Clean UI inspired by trading apps (like Zerodha)
+* 📱 Fully responsive design
+* ⚡ Efficient state management using BLoC
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🏗️ Architecture
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# stock
- 9ae56f58a020fe97241f5eb2d51b23fdf0e2d5ff
+This project follows **BLoC (Business Logic Component)** architecture:
+
+```
+lib/
+│
+├── bloc/
+│   ├── stock_bloc.dart
+│   ├── stock_event.dart
+│   └── stock_state.dart
+│
+├── data/
+│   └── stock_repository.dart
+│
+├── models/
+│   └── stock_model.dart
+│
+├── ui/
+│   ├── screens/
+│   │   ├── home_screen.dart
+│   │   └── edit_watchlist_screen.dart
+│   │
+│   └── widgets/
+│       └── stock_tile.dart
+│
+└── main.dart
+```
+
+---
+
+## 🧠 BLoC Flow
+
+```
+UI → Event → BLoC → State → UI
+```
+
+### Events:
+
+* `LoadStocks`
+* `ReorderStocks`
+* `SaveWatchlist`
+
+### States:
+
+* `StockInitial`
+* `StockLoaded`
+
+---
+
+## 🎨 UI Screens
+
+### 🏠 Home Screen
+
+* Displays stock list
+* Top market summary (Sensex / Nifty)
+* Bottom navigation bar
+* "Sort by" / "Edit Watchlist" option
+
+### ✏️ Edit Watchlist Screen
+
+* Drag & reorder stocks
+* Delete items
+* Save updated list
+
+---
+
+## 🛠️ Tech Stack
+
+* Flutter
+* Dart
+* flutter_bloc
+
+---
+
+## 📦 Dependencies
+
+Add this in `pubspec.yaml`:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+```
+
+---
+
+## ▶️ Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone <your-repo-link>
+```
+
+2. Navigate to project:
+
+```bash
+cd flutter_watchlist
+```
+
+3. Install dependencies:
+
+```bash
+flutter pub get
+```
+
+4. Run the app:
+
+```bash
+flutter run
+```
+
+---
+
+## 📸 Screenshots
+
+* Home Screen (Watchlist)
+* Edit Watchlist (Drag & Drop)
+
+*(Add screenshots here if needed)*
+
+---
+
+## 💡 Key Highlights
+
+* Clean separation of UI & business logic
+* Reusable widgets
+* Type-safe implementation
+* Smooth drag-and-drop UX
+* Scalable project structure
+
+---
+
+## 🚀 Future Improvements
+
+* 🔄 Real-time stock API integration
+* 💾 Local storage (SharedPreferences)
+* 🔍 Search functionality
+* 📊 Sorting (Price / Change / Name)
+* 🌙 Dark mode
+
+---
+
+## 👩‍💻 Author
+
+**Prajakta Narayankar**
+
+---
+
+## 📄 License
+
+This project is for assignment/demo purposes.
