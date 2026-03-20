@@ -140,8 +140,6 @@ flutter run(on directly on chrome also)
 * Home Screen (Watchlist)
 * Edit Watchlist (Drag & Drop)
 
-*(Add screenshots here if needed)*
-
 ---
 ## 📸 Screenshots
 
@@ -186,4 +184,4 @@ flutter run(on directly on chrome also)
 ## 📄 License
 
 This project is for assignment/demo purposes.
->>>>>>> a714b7ecf530dfdc82f25d1d9d992c086d08cb06
+
