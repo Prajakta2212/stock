@@ -112,7 +112,7 @@ dependencies:
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/Prajakta2212/stock.git
 ```
 
 2. Navigate to project:
